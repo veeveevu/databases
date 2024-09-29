@@ -50,10 +50,11 @@ limit 50;
 select country.name  
 from country  
 join airport on airport.iso_country = country.iso_country  
-group by country.name  
-having count(airport.id) > 1000;  
+group by country.iso_country  
+having count(airport.id) > 1000;
+  
+![Ảnh chụp màn hình 2024-09-29 201218](https://github.com/user-attachments/assets/0bd42602-059d-4389-9af8-279a2c9fd2b0)
 
-![Ảnh chụp màn hình 2024-09-29 162955](https://github.com/user-attachments/assets/d84c6f03-eaca-44dc-af5f-4d6b99cb7b6e)
 
 ### 7  
 
