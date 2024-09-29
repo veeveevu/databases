@@ -3,14 +3,14 @@
 
 ### 1  
 
-update game
-set location = (
-    select ident
-    from airport
-    where name = 'Nottingham Airport'
-),
-co2_consumed = co2_consumed + 500
-where screen_name = 'Vesa';
+update game  
+set location = (  
+    select ident  
+    from airport  
+    where name = 'Nottingham Airport'  
+),  
+co2_consumed = co2_consumed + 500  
+where screen_name = 'Vesa';  
 
 Note: I did not include the screenshot because I do not want to modify the original database.
 
@@ -20,7 +20,7 @@ Prepare your own database for the project by deleting all dummy data relating to
 
 Do you have to delete data first from the game table or from the goal_reached table?
 
-a.goal_reached
+a. goal_reached
 
 ### 3  
 
